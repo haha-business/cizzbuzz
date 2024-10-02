@@ -16,4 +16,5 @@ jobs:
 
       - run: |
           line_count=$(git ls-files -z | xargs -0 cat | wc -l)
+          factor "$line_count"
           (( ((line_count % 3) == 0) ^ ((line_count % 5) == 0) ))
