@@ -1,0 +1,19 @@
+name: CIzzBuzz
+on:
+  pull_request:
+  merge_group:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # If this job was triggered by a `merge_group` event, sleep for a little
+      # bit. This gives me time to queue up a handful of PRs to test the
+      # "maximum pull requests to merge" option.
+      - run: sleep 90
+        if: ${{ github.event_name == 'merge_group' }}
+
+      - run: |
+          line_count=$(git ls-files -z | xargs -0 cat | wc -l)
+          (( ((line_count % 3) == 0) ^ ((line_count % 5) == 0) ))
