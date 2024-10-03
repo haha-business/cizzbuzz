@@ -6,11 +6,14 @@ In order to do this effectively, we want a repository with a handful of pull req
 
 Writing a bot to make a bunch of useless pull requests seems poor-spirited, so instead I'll ask... you! Pull requests welcome! [Nothing could possibly go wrong.](https://github.com/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee)
 
+Pull requests that don't pass checks on their own can't go into the merge queue. Once your PR passes checks and I'm okay with the contents, I'll approve the PR. After that, you don't need to do anything else.
+
+It's likely --- in fact, it's the entire point of this repository --- that your PR will be removed from the merge queue for failing checks there, and you'll receive a notification about this. You don't need to do anything if you don't want to; since it still passes checks on its own I'll be able to add it to the merge queue again later, and it still has a chance of merging based on whatever else got merged in the meantime.
+
 ## Ground rules
 
 - I won't merge anything that changes the "meta" part of the repo: this explanatory text, the license, the code of conduct, or the CI workflow.
 - If you submit a PR with something I don't want to be in the repo, I'll close it. (I reserve the right to report it to GitHub Support if it's particularly unpleasant.)
-- If your PR is queued for merging but is rejected, well, that's the point of the repository. You don't need to follow-up and rebase/fix your PR, but if you'd like to you can.
 - If you'd like to share feedback about how the GitHub Merge Queue workflow feels (particularly if you had to rebase a few times) I'd love to hear it in the PR itself.
 
 ## Ideas for commits
