@@ -8,3 +8,6 @@
 5. Go back to step 2.
 
 Keep counting until you make a mistake. See if you can beat your high score! Or your friends' high scores! Or your enemies! And their high scores, too!
+
+(Oh stars, I have no idea what number I'm looking for. I think it was the 37? Which means this is 39, and it's supposed... to be a fizz or a buzz?)
+(So this works... maybe... if I understand the check.)
